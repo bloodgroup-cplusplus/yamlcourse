@@ -1,0 +1,10 @@
+"apple": "I am a red fruit"
+1: "this is chad's roll number"
+
+# lists
+- apple
+- mango
+- banna
+- Apple #yaml is case sensitive apple != Apple
+
+
