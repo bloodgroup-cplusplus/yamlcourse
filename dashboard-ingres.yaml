@@ -1,0 +1,15 @@
+apiVersion: networking.k8.io/v1beta1
+kind: Ingres
+metadata:
+  name: dashboard-ingress
+  namespace:kube-system 
+spec:
+  rules:
+  - host: dashboard.com
+    http:
+      paths:
+        - backend:kube-system
+      servicePort: 80
+
+
+
