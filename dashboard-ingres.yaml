@@ -6,6 +6,10 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target:
 spec:
+  tls:
+    - hosts:
+      - dashboard.com
+    secretName: dashboard-tls
   rules:
   - host: dashboard.com
     http:
