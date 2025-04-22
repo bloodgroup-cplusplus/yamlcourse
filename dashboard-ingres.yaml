@@ -8,8 +8,9 @@ spec:
   - host: dashboard.com
     http:
       paths:
-        - backend:kube-system
-      servicePort: 80
+      - backend:
+        serviceName:kube-system
+        servicePort: 80
 
 
 
